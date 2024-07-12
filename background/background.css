@@ -1,0 +1,16 @@
+body{
+  background-image: url(back.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+}
+ p:nth-child(odd) { 
+    color: brown;
+}
+p:nth-child(even){
+    color: red;
+}
+h1{
+    color: blue;
+}

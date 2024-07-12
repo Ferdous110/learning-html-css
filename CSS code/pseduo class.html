@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseduo class</title>
+    <style>
+        input{
+            padding: 10px;
+            font-size: 1rem;
+            width: 150px;
+        }
+        input:hover{
+            background-color: yellowgreen;
+        }
+        table,tr,td{
+            border: 2px solid black ;
+        }
+        tr:nth-child(even){
+            background-color: brown;
+        }
+        p:hover{ color: red; }
+        p{ text-align: justify;}
+        p::first-letter{color: blueviolet; font-size: 3rem; }
+        /*p::after{ content:< ;} eigulao use kora jabe*/
+        /*P::before{ content: =;}*/
+        .demo::before , .demo::after {
+            content: '';
+            width: 100%;
+            height: 20px;
+            background-color: yellowgreen;
+            display: inline-block;
+        }
+        ::selection{
+            background-color: yellow; color: black;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="enter your  name"> 
+    <input type="submit" submit>
+<hr>
+    <table>
+        <tr>
+            <td> Name</td>
+            <td>Age</td>
+        </tr>
+        <tr>
+            <td> Ferdous </td>
+            <td> 24 </td>
+        </tr>
+        <tr>
+            <td> fahim</td>
+            <td>24</td>
+        </tr>
+    </table>
+    <div class="demo">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse in est ante in nibh mauris cursus mattis molestie. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. 
+         Orci phasellus egestas tellus rutrum tellus pellentesque. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer. 
+        At augue eget arcu dictum varius. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Maecenas sed enim ut sem. Ultrices eros in cursus turpis massa tincidunt dui ut.
+         Malesuada fames ac turpis egestas maecenas pharetra convallis. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Risus in hendrerit gravida rutrum quisque.
+          Id consectetur purus ut faucibus pulvinar elementum.</p>
+          <p> Good job</p>
+        </div>
+</body>
+</html>
